@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<students>
+  <student>
+    <name>Pesho Peshev</name>
+    <sex>Male</sex>
+    <birthDate>1.1.2000</birthDate>
+    <phone>0888123456</phone>
+    <email>some@mail.com</email>
+    <course>Web Development</course>
+    <specialty>Front-End</specialty>
+    <facultyNumber>123</facultyNumber>
+    <exams>
+      <exam>
+        <name>HTML</name>
+        <tutor>Konstantin Simeonov</tutor>
+        <score>80.2</score>
+      </exam>
+      <exam>
+        <name>CSS</name>
+        <tutor>Evlogi Hristov</tutor>
+        <score>85.7</score>
+      </exam>
+      <exam>
+        <name>JavaScript Basics</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>81.3</score>
+      </exam>
+      <exam>
+        <name>JavaScript OOP</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>88.8</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Gosho Goshev</name>
+    <sex>Male</sex>
+    <birthDate>2.2.2000</birthDate>
+    <phone>0883123456</phone>
+    <email>other@mail.com</email>
+    <course>Web Development</course>
+    <specialty>Front-End</specialty>
+    <facultyNumber>124</facultyNumber>
+    <exams>
+      <exam>
+        <name>HTML</name>
+        <tutor>Konstantin Simeonov</tutor>
+        <score>50.3</score>
+      </exam>
+      <exam>
+        <name>CSS</name>
+        <tutor>Evlogi Hristov</tutor>
+        <score>85.1</score>
+      </exam>
+      <exam>
+        <name>JavaScript Basics</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>61.3</score>
+      </exam>
+      <exam>
+        <name>JavaScript OOP</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>78.8</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Penka Peneva</name>
+    <sex>Female</sex>
+    <birthDate>3.3.2000</birthDate>
+    <phone>0878123456</phone>
+    <email>another@mail.com</email>
+    <course>Web Development</course>
+    <specialty>Front-End</specialty>
+    <facultyNumber>125</facultyNumber>
+    <exams>
+      <exam>
+        <name>HTML</name>
+        <tutor>Konstantin Simeonov</tutor>
+        <score>90.3</score>
+      </exam>
+      <exam>
+        <name>CSS</name>
+        <tutor>Evlogi Hristov</tutor>
+        <score>89.1</score>
+      </exam>
+      <exam>
+        <name>JavaScript Basics</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>91.3</score>
+      </exam>
+      <exam>
+        <name>JavaScript OOP</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>98.8</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Misho Mishov</name>
+    <sex>Male</sex>
+    <birthDate>2.1.2000</birthDate>
+    <phone>0899123456</phone>
+    <email>someOther@mail.com</email>
+    <course>Web Development</course>
+    <specialty>Front-End</specialty>
+    <facultyNumber>126</facultyNumber>
+    <exams>
+      <exam>
+        <name>HTML</name>
+        <tutor>Konstantin Simeonov</tutor>
+        <score>77.3</score>
+      </exam>
+      <exam>
+        <name>CSS</name>
+        <tutor>Evlogi Hristov</tutor>
+        <score>78.1</score>
+      </exam>
+      <exam>
+        <name>JavaScript Basics</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>81.3</score>
+      </exam>
+      <exam>
+        <name>JavaScript OOP</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>88.8</score>
+      </exam>
+    </exams>
+  </student>
+</students>
