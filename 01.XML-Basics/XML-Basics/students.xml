@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <students>
-  <student>
+  <student xmlns:students="urn:students-xml">
     <name>Pesho Peshev</name>
     <sex>Male</sex>
     <birthDate>1.1.2000</birthDate>
@@ -32,7 +32,7 @@
       </exam>
     </exams>
   </student>
-  <student>
+  <student xmlns:students="urn:students-xml">
     <name>Gosho Goshev</name>
     <sex>Male</sex>
     <birthDate>2.2.2000</birthDate>
@@ -64,7 +64,7 @@
       </exam>
     </exams>
   </student>
-  <student>
+  <student xmlns:students="urn:students-xml">
     <name>Penka Peneva</name>
     <sex>Female</sex>
     <birthDate>3.3.2000</birthDate>
@@ -96,7 +96,7 @@
       </exam>
     </exams>
   </student>
-  <student>
+  <student xmlns:students="urn:students-xml">
     <name>Misho Mishov</name>
     <sex>Male</sex>
     <birthDate>2.1.2000</birthDate>
