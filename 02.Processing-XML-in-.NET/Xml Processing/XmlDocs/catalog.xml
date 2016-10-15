@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<catalog xmlns="http://tempuri.org/catalog-homework"
+<catalog xmlns="urn:catalog-homework"
          xmlns:ns="http://www.w3.org/2001/XMLSchema-instance catalog.xsd">
   <album>
     <name>Gecko</name>
@@ -52,6 +52,31 @@
       <song>
         <title>A Milli</title>
         <duration>3:41</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Like Father, Like Son</name>
+    <artist>Lil Wayne</artist>
+    <year>2006</year>
+    <producer>Cash Money</producer>
+    <price>25$</price>
+    <songs>
+      <song>
+        <title>Stuntin' Like My Daddy</title>
+        <duration>4.29</duration>
+      </song>
+      <song>
+        <title>Leather So Soft</title>
+        <duration>4.54</duration>
+      </song>
+      <song>
+        <title>About All That</title>
+        <duration>4.31</duration>
+      </song>
+      <song>
+        <title>Like Father, Like Son</title>
+        <duration>4.23</duration>
       </song>
     </songs>
   </album>
