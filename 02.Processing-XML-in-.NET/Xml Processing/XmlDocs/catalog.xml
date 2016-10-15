@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog xmlns="http://tempuri.org/catalog-homework"
+         xmlns:ns="http://www.w3.org/2001/XMLSchema-instance catalog.xsd">
+  <album>
+    <name>Gecko</name>
+    <artist>Oliver Heldens</artist>
+    <year>2014</year>
+    <producer>Musical Freedom</producer>
+    <price>30$</price>
+    <songs>
+      <song>
+        <title>Gecko (Overdrive)</title>
+        <duration>3.14</duration>
+      </song>
+      <song>
+        <title>Last All Night (Koala)</title>
+        <duration>3.45</duration>
+      </song>
+      <song>
+        <title>You Know</title>
+        <duration>3.30</duration>
+      </song>
+      <song>
+        <title>Melody</title>
+        <duration>3.24</duration>
+      </song>
+      <song>
+        <title>This</title>
+        <duration>3.11</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Tha Carter 3</name>
+    <artist>Lil Wayne</artist>
+    <year>2008</year>
+    <producer>Cash Money</producer>
+    <price>30$</price>
+    <songs>
+      <song>
+        <title>Mr. Carter</title>
+        <duration>5.16</duration>
+      </song>
+      <song>
+        <title>Got Money</title>
+        <duration>4.04</duration>
+      </song>
+      <song>
+        <title>Lollipop</title>
+        <duration>4:59</duration>
+      </song>
+      <song>
+        <title>A Milli</title>
+        <duration>3:41</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
