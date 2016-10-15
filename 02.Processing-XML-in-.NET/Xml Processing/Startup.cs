@@ -21,12 +21,12 @@ namespace Xml_Processing
 
             var allArtists = domParser.GetAllUniqArtistsWithXPath(doc);
             printer.PrintStringCollection(allArtists);
+
             decimal maxPrice = 30.2m;
+            Console.WriteLine($"Artists after removing these with price greater than ${maxPrice}");
             domParser.RemoveAlbumByPrice(catalog, maxPrice);
 
-            Console.WriteLine($"Artists after removing these with price greater than ${maxPrice}");
-            artists = domParser.GetAllUniqArtists(catalog);
-            printer.PrintDictonary(artists, "albums");
+            domParser.RemoveAlbumByPriceUsingXDocument(url, maxPrice);
         }
     }
 }

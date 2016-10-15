@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace Xml_Processing.Models
 {
@@ -55,6 +53,22 @@ namespace Xml_Processing.Models
                     element.RemoveChild(node);
                 }
             }
+        }
+
+        public void RemoveAlbumByPriceUsingXDocument(string url, decimal maxPrice)
+        {
+            XNamespace ns = "urn:catalog-homework";
+            var xDoc = XDocument.Load(url).Document;
+            xDoc.Descendants(ns + "album")
+                .Where(x => decimal.Parse(x.Element(ns + "price").Value) > maxPrice)
+                .Remove();
+
+            // This is for showing that the album is removed :)
+            //xDoc.Descendants(ns + "album")
+            //                .Elements(ns + "artist")
+            //                .Select(x => x.Value)
+            //                .ToList()
+            //                .ForEach(Console.WriteLine);
         }
     }
 }
