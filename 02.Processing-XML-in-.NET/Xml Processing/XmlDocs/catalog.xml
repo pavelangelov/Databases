@@ -6,7 +6,7 @@
     <artist>Oliver Heldens</artist>
     <year>2014</year>
     <producer>Musical Freedom</producer>
-    <price>30$</price>
+    <price>30.5</price>
     <songs>
       <song>
         <title>Gecko (Overdrive)</title>
@@ -35,7 +35,7 @@
     <artist>Lil Wayne</artist>
     <year>2008</year>
     <producer>Cash Money</producer>
-    <price>30$</price>
+    <price>30.1</price>
     <songs>
       <song>
         <title>Mr. Carter</title>
@@ -60,7 +60,7 @@
     <artist>Lil Wayne</artist>
     <year>2006</year>
     <producer>Cash Money</producer>
-    <price>25$</price>
+    <price>25.3</price>
     <songs>
       <song>
         <title>Stuntin' Like My Daddy</title>

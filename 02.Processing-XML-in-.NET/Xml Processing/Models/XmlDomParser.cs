@@ -44,5 +44,17 @@ namespace Xml_Processing.Models
 
             return result;
         }
+
+        public void RemoveAlbumByPrice(XmlElement element, decimal maxPrice)
+        {
+            foreach (XmlNode node in element.ChildNodes)
+            {
+                decimal price = decimal.Parse(node["price"].InnerText);
+                if (maxPrice < price)
+                {
+                    element.RemoveChild(node);
+                }
+            }
+        }
     }
 }
