@@ -9,6 +9,11 @@ namespace Xml_Processing.Models
 {
     public class ConsoleLogger : IPrinter
     {
+        public void Print(string text)
+        {
+            Console.WriteLine(text);
+        }
+
         public void PrintDictonary<Tkey, Tvalue>(IDictionary<Tkey, Tvalue> dictonary, string valueName)
         {
             foreach (var key in dictonary)
