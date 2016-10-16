@@ -1,6 +1,4 @@
-﻿using System;
-using System.Xml;
-using Xml_Processing.Models;
+﻿using Xml_Processing.Models;
 
 namespace Xml_Processing
 {
@@ -8,38 +6,42 @@ namespace Xml_Processing
     {
         public static void Main()
         {
+            var separator = new string('*', 40);
             var url = "../../XmlDocs/catalog.xml";
-            XmlDocument doc = new XmlDocument();
             var domParser = new XmlDomParser();
             var staxParser = new XmlStaxParser();
+            var linqXml = new LinqToXml();
             var printer = new ConsoleLogger();
 
-            // Task 2. extracts all different artists
-            doc.Load(url);
-            var catalog = doc.DocumentElement;
-            var artists = domParser.GetAllUniqArtists(catalog);
-            printer.Print("Task 2.");
+            printer.Print(separator);
+            printer.Print("Task 2. extracts all different artists");
+            var artists = domParser.GetAllUniqArtists(url);
             printer.PrintDictonary(artists, "albums");
-
-            // Task 3. extracts all different artists using XPath
-            var allArtists = domParser.GetAllUniqArtistsWithXPath(doc);
-            printer.Print("Task 3.");
+            printer.Print(separator);
+            
+            printer.Print("Task 3. extracts all different artists using XPath");
+            var allArtists = domParser.GetAllUniqArtistsWithXPath(url);
             printer.PrintStringCollection(allArtists);
-
-            // Task 4. delete from catalog.xml all albums having price > 30.2
+            printer.Print(separator);
+            
+            printer.Print("Task 4. delete from catalog.xml all albums having price > 30.2");
             decimal maxPrice = 30.2m;
-            printer.Print("Task 4.");
-            domParser.RemoveAlbumByPrice(catalog, maxPrice);
+            var artistsAfter = domParser.RemoveAlbumByPrice(url, maxPrice);
+            printer.PrintDictonary(artistsAfter, "albums");
             // Task 4. Rewrite the same using XDocument and LINQ query.
-            domParser.RemoveAlbumByPriceUsingXDocument(url, maxPrice);
-
-            // Task 5. Write a program, which using XmlReader extracts all song titles from catalog.xml.
-            printer.Print("Task 5.");
+            linqXml.RemoveAlbumByPriceUsingXDocument(url, maxPrice);
+            printer.Print(separator);
+            
+            printer.Print("Task 5. Write a program, which using XmlReader extracts all song titles from catalog.xml.");
             printer.Print(staxParser.ExtractAllSongsNames(url));
+            printer.Print(separator);
 
             /* Task 7. Write a program, which creates new XML document,
              *  which contains data from person-info.txt in structured XML format. */
-            domParser.CreateXmlFromTextFile();
+            printer.Print("Task 7. Write a program, which creates new XML document");
+            var textUrl = "../../TextFiles/person-info.txt";
+            printer.Print(linqXml.CreateXmlFromTextFile(textUrl).ToString());
+            printer.Print(separator);
         }
     }
 }
