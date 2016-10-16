@@ -56,6 +56,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TextFiles\person-info.txt" />
     <Content Include="XmlDocs\catalog.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

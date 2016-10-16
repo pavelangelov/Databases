@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
@@ -69,6 +70,26 @@ namespace Xml_Processing.Models
             //                .Select(x => x.Value)
             //                .ToList()
             //                .ForEach(Console.WriteLine);
+        }
+
+        public void CreateXmlFromTextFile()
+        {
+            XElement root = new XElement("people");
+            XElement person = new XElement("person");
+            var fieldNames = new string[] { "name", "address", "phone" };
+            var personInfo = new List<string>();
+            var url = "../../TextFiles/person-info.txt";
+            var startIndex = 0;
+            foreach (var line in File.ReadAllLines(url))
+            {
+                XElement field = new XElement(fieldNames[startIndex]);
+                field.Add(line);
+                person.Add(field);
+                startIndex++;
+            }
+
+            root.Add(person);
+            root.Save("../../XmlDocs/people.xml");
         }
     }
 }

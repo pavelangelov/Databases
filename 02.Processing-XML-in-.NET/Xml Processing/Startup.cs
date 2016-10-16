@@ -27,6 +27,8 @@ namespace Xml_Processing
             domParser.RemoveAlbumByPrice(catalog, maxPrice);
 
             domParser.RemoveAlbumByPriceUsingXDocument(url, maxPrice);
+
+            domParser.CreateXmlFromTextFile();
         }
     }
 }
