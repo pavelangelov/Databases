@@ -46,6 +46,12 @@ namespace Xml_Processing
             var textUrl = "../../TextFiles/person-info.txt";
             printer.Print(linqXml.CreateXmlFromTextFile(textUrl).ToString());
             printer.Print(separator);
+
+            printer.Print("Task 8. Write a program, which reads the file catalog.xml and creates the file album.xml");
+            var albumsUrl = "../../XmlDocs/albums.xml";
+            var resultMsg = staxParser.ExtractAlbumsInNewFile(url, albumsUrl);
+            printer.Print(resultMsg);
+            printer.Print(separator);
         }
     }
 }
