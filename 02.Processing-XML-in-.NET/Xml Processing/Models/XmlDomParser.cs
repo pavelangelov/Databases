@@ -13,19 +13,6 @@ namespace Xml_Processing.Models
             var root = xmlDoc.DocumentElement;
             var result = GetAllArtists(root);
 
-            //foreach (XmlNode node in root.ChildNodes)
-            //{
-            //    var artist = node["artist"].InnerText;
-            //    if (result.ContainsKey(artist))
-            //    {
-            //        result[artist] += 1;
-            //    }
-            //    else
-            //    {
-            //        result[artist] = 1;
-            //    }
-            //}
-
             return result;
         }
 

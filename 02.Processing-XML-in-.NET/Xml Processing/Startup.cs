@@ -36,6 +36,10 @@ namespace Xml_Processing
             printer.Print(staxParser.ExtractAllSongsNames(url));
             printer.Print(separator);
 
+            printer.Print("Task 6. Rewrite the same using XDocument and LINQ query.");
+            printer.Print(linqXml.ExtractAllSongsTitles(url));
+            printer.Print(separator);
+
             /* Task 7. Write a program, which creates new XML document,
              *  which contains data from person-info.txt in structured XML format. */
             printer.Print("Task 7. Write a program, which creates new XML document");

@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/01.XML-Basics/XML-Basics/scripts/ai.0.22.19-build00125.js
+/01.XML-Basics/XML-Basics/scripts/ai.0.22.19-build00125.min.js

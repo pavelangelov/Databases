@@ -7,22 +7,26 @@
       <head>
         <style>
           table {
-          border-collapse: collapse;
-          background-color: pink;
+            border-collapse: collapse;
+            background-color: pink;
           }
 
           td, th {
-          padding: 5px;
-          border: 1px solid black;
+            padding: 5px;
+            border: 1px solid black;
           }
-          
+
           .left {
             color: blue;
           }
-          
+
           .right {
             color: green;
-           }
+          }
+
+          hr {
+            border-color: black;
+          }
         </style>
       </head>
       <body>
@@ -80,6 +84,7 @@
                    <span class="left"> Score:</span>
                    <span class="right"> <xs:value-of select="score"/></span>
                   </div>
+                  <hr/>
                 </xs:for-each>
               </td>
             </tr>

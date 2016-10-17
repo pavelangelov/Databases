@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
@@ -42,6 +43,16 @@ namespace Xml_Processing.Models
             root.Save("../../XmlDocs/people.xml");
 
             return root;
+        }
+
+        public string ExtractAllSongsTitles(string url)
+        {
+            XNamespace ns = "urn:catalog-homework";
+            var root = XDocument.Load(url).Document;
+            var result = root.Descendants(ns + "title")
+                            .Select(x => x.Value);
+
+            return string.Join(Environment.NewLine, result);
         }
     }
 }
