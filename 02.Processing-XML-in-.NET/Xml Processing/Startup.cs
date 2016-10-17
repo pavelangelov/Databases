@@ -52,6 +52,11 @@ namespace Xml_Processing
             var resultMsg = staxParser.ExtractAlbumsInNewFile(url, albumsUrl);
             printer.Print(resultMsg);
             printer.Print(separator);
+
+            var dirUrl = "../../";
+            var dir = new System.IO.DirectoryInfo(dirUrl);
+            var result = linqXml.GetDirectoryXml(dir);
+            result.Save($"../../XmlDocs/{dir.Name}.xml");
         }
     }
 }

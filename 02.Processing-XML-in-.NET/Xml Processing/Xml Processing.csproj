@@ -59,7 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="TextFiles\person-info.txt" />
+    <Content Include="XmlDocs\albums.xml" />
     <Content Include="XmlDocs\catalog.xml" />
+    <Content Include="XmlDocs\people.xml" />
+    <Content Include="XmlDocs\Xml Processing.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir name="Xml Processing">
+  <file name="App.config" />
+  <file name="Startup.cs" />
+  <file name="Xml Processing.csproj" />
+  <file name="Xml Processing.csproj.user" />
+  <dir name="bin">
+    <dir name="Debug">
+      <file name="Xml Processing.exe" />
+      <file name="Xml Processing.exe.config" />
+      <file name="Xml Processing.pdb" />
+      <file name="Xml Processing.vshost.exe" />
+      <file name="Xml Processing.vshost.exe.config" />
+      <file name="Xml Processing.vshost.exe.manifest" />
+    </dir>
+    <dir name="Release" />
+  </dir>
+  <dir name="Contracts">
+    <file name="IPrinter.cs" />
+  </dir>
+  <dir name="Models">
+    <file name="ConsoleLogger.cs" />
+    <file name="LinqToXml.cs" />
+    <file name="XmlDomParser.cs" />
+    <file name="XmlStaxParser.cs" />
+  </dir>
+  <dir name="obj">
+    <dir name="Debug">
+      <file name="DesignTimeResolveAssemblyReferencesInput.cache" />
+      <file name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+      <file name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+      <file name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+      <file name="Xml Processing.csproj.FileListAbsolute.txt" />
+      <file name="Xml Processing.csprojResolveAssemblyReference.cache" />
+      <file name="Xml Processing.exe" />
+      <file name="Xml Processing.pdb" />
+      <dir name="TempPE" />
+    </dir>
+  </dir>
+  <dir name="Properties">
+    <file name="AssemblyInfo.cs" />
+  </dir>
+  <dir name="TextFiles">
+    <file name="person-info.txt" />
+  </dir>
+  <dir name="XmlDocs">
+    <file name="albums.xml" />
+    <file name="catalog.xml" />
+    <file name="catalog.xsd" />
+    <file name="people.xml" />
+  </dir>
+</dir>
