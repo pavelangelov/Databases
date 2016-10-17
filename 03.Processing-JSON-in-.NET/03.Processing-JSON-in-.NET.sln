@@ -8,7 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processing JSON", "Processing JSON\Processing JSON.csproj", "{D168EB8B-4AC5-4059-A8FA-981D884A441B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D168EB8B-4AC5-4059-A8FA-981D884A441B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D168EB8B-4AC5-4059-A8FA-981D884A441B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D168EB8B-4AC5-4059-A8FA-981D884A441B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D168EB8B-4AC5-4059-A8FA-981D884A441B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
