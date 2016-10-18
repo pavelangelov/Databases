@@ -1,5 +1,6 @@
-﻿using Processing_JSON.Contracts;
-using System;
+﻿using System;
+
+using Processing_JSON.Contracts;
 
 namespace Processing_JSON.Models
 {

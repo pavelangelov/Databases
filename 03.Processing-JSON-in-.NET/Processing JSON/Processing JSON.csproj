@@ -50,6 +50,9 @@
     <Compile Include="Contracts\ILogger.cs" />
     <Compile Include="Contracts\IVideoItem.cs" />
     <Compile Include="Models\ConsoleLogger.cs" />
+    <Compile Include="Models\FileDownloader.cs" />
+    <Compile Include="Models\HtmlCreator.cs" />
+    <Compile Include="Models\JsonParser.cs" />
     <Compile Include="Models\Link.cs" />
     <Compile Include="Models\VideoItem.cs" />
     <Compile Include="Startup.cs" />
@@ -60,7 +63,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DownloadedFiles\telerik-rss.xml" />
+    <Content Include="DownloadedFiles\telerik-rss.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

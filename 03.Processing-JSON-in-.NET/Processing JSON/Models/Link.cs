@@ -2,7 +2,6 @@
 
 namespace Processing_JSON.Models
 {
-
     public class Link
     {
         [JsonProperty("@rel")]

@@ -11,6 +11,36 @@
  </author>
  <published>2011-06-24T15:53:13+00:00</published>
  <entry>
+  <id>yt:video:qOiNmRplOzY</id>
+  <yt:videoId>qOiNmRplOzY</yt:videoId>
+  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
+  <title>Оператори и изрази в C#</title>
+  <link rel="alternate" href="http://www.youtube.com/watch?v=qOiNmRplOzY"/>
+  <author>
+   <name>TelerikAcademy</name>
+   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
+  </author>
+  <published>2016-10-18T07:56:51+00:00</published>
+  <updated>2016-10-18T15:49:47+00:00</updated>
+  <media:group>
+   <media:title>Оператори и изрази в C#</media:title>
+   <media:content url="https://www.youtube.com/v/qOiNmRplOzY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/qOiNmRplOzY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Лекция: Оператори и изрази в C#
+Курс: C# Основи
+Лектор: Константин Симеонов
+Дата: 18.10.2016
+
+Уебсайт на Академията на Телерик: http://academy.telerik.com
+
+Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="107"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
   <id>yt:video:dh82S8ejtGU</id>
   <yt:videoId>dh82S8ejtGU</yt:videoId>
   <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
@@ -21,7 +51,7 @@
    <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
   </author>
   <published>2016-10-17T16:07:59+00:00</published>
-  <updated>2016-10-17T17:01:50+00:00</updated>
+  <updated>2016-10-17T23:22:40+00:00</updated>
   <media:group>
    <media:title>Бази данни &amp; SQL: Въведение в SQL - част 1</media:title>
    <media:content url="https://www.youtube.com/v/dh82S8ejtGU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
@@ -36,7 +66,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="31"/>
+    <media:statistics views="78"/>
    </media:community>
   </media:group>
  </entry>
@@ -51,7 +81,7 @@
    <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
   </author>
   <published>2016-10-17T15:33:55+00:00</published>
-  <updated>2016-10-17T16:45:11+00:00</updated>
+  <updated>2016-10-18T15:01:32+00:00</updated>
   <media:group>
    <media:title>Бази данни &amp; SQL: Въведение в SQL - част 2</media:title>
    <media:content url="https://www.youtube.com/v/fyM0mPb6eU0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
@@ -65,8 +95,8 @@
 
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
-    <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="19"/>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="54"/>
    </media:community>
   </media:group>
  </entry>
@@ -96,7 +126,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="208"/>
+    <media:statistics views="285"/>
    </media:community>
   </media:group>
  </entry>
@@ -126,7 +156,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="201"/>
+    <media:statistics views="249"/>
    </media:community>
   </media:group>
  </entry>
@@ -156,7 +186,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="2" average="5.00" min="1" max="5"/>
-    <media:statistics views="190"/>
+    <media:statistics views="225"/>
    </media:community>
   </media:group>
  </entry>
@@ -186,7 +216,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="130"/>
+    <media:statistics views="158"/>
    </media:community>
   </media:group>
  </entry>
@@ -216,7 +246,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="136"/>
+    <media:statistics views="182"/>
    </media:community>
   </media:group>
  </entry>
@@ -246,7 +276,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="1" average="5.00" min="1" max="5"/>
-    <media:statistics views="180"/>
+    <media:statistics views="224"/>
    </media:community>
   </media:group>
  </entry>
@@ -276,7 +306,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="156"/>
+    <media:statistics views="193"/>
    </media:community>
   </media:group>
  </entry>
@@ -306,7 +336,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="2" average="5.00" min="1" max="5"/>
-    <media:statistics views="217"/>
+    <media:statistics views="265"/>
    </media:community>
   </media:group>
  </entry>
@@ -336,7 +366,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="229"/>
+    <media:statistics views="299"/>
    </media:community>
   </media:group>
  </entry>
@@ -366,7 +396,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="4" average="5.00" min="1" max="5"/>
-    <media:statistics views="276"/>
+    <media:statistics views="318"/>
    </media:community>
   </media:group>
  </entry>
@@ -381,7 +411,7 @@
    <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
   </author>
   <published>2016-10-14T12:28:36+00:00</published>
-  <updated>2016-10-15T20:15:03+00:00</updated>
+  <updated>2016-10-18T10:58:50+00:00</updated>
   <media:group>
    <media:title>Въведение в шаблоните за дизайн</media:title>
    <media:content url="https://www.youtube.com/v/KiQENaiijPQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
@@ -395,8 +425,8 @@
 
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
-    <media:starRating count="1" average="5.00" min="1" max="5"/>
-    <media:statistics views="164"/>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="182"/>
    </media:community>
   </media:group>
  </entry>
@@ -426,37 +456,7 @@
 Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
    <media:community>
     <media:starRating count="1" average="1.00" min="1" max="5"/>
-    <media:statistics views="319"/>
-   </media:community>
-  </media:group>
- </entry>
- <entry>
-  <id>yt:video:OnIhma3BMrU</id>
-  <yt:videoId>OnIhma3BMrU</yt:videoId>
-  <yt:channelId>UCLC-vbm7OWvpbqzXaoAMGGw</yt:channelId>
-  <title>Въведение в програмирането</title>
-  <link rel="alternate" href="http://www.youtube.com/watch?v=OnIhma3BMrU"/>
-  <author>
-   <name>TelerikAcademy</name>
-   <uri>http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw</uri>
-  </author>
-  <published>2016-10-13T15:03:28+00:00</published>
-  <updated>2016-10-14T19:12:21+00:00</updated>
-  <media:group>
-   <media:title>Въведение в програмирането</media:title>
-   <media:content url="https://www.youtube.com/v/OnIhma3BMrU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
-   <media:thumbnail url="https://i4.ytimg.com/vi/OnIhma3BMrU/hqdefault.jpg" width="480" height="360"/>
-   <media:description>Лекция: Въведение в програмирането
-Курс: C# Основи
-Лектор: Стивън Цветков
-Дата: 12 октомври 2016
-
-Уебсайт на Академията на Телерик: http://academy.telerik.com
-
-Следете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.</media:description>
-   <media:community>
-    <media:starRating count="1" average="5.00" min="1" max="5"/>
-    <media:statistics views="311"/>
+    <media:statistics views="385"/>
    </media:community>
   </media:group>
  </entry>
