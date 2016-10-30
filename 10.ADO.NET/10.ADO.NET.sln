@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "imgs", "imgs", "{77EFEE31-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExelOperations", "ExelOperations\ExelOperations.csproj", "{FE0BD67D-047C-4D8A-9C06-735C3149E479}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlConnection", "MySqlConnection\MySqlConnection.csproj", "{D4D227EA-4136-4896-8BCF-5A41C07BF38E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{FE0BD67D-047C-4D8A-9C06-735C3149E479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0BD67D-047C-4D8A-9C06-735C3149E479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE0BD67D-047C-4D8A-9C06-735C3149E479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D227EA-4136-4896-8BCF-5A41C07BF38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D227EA-4136-4896-8BCF-5A41C07BF38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D227EA-4136-4896-8BCF-5A41C07BF38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D227EA-4136-4896-8BCF-5A41C07BF38E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
