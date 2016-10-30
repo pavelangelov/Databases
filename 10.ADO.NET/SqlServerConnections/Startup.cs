@@ -22,8 +22,15 @@ namespace SqlServerConnections
             //logger.WriteLine(fullInfo);
 
             // Task 3. Write a program that retrieves all product categories and the names of the products in each category.
-            var data = sqlConnection.ExtractJoinedTables();
-            logger.WriteLine(data);
+            //var data = sqlConnection.ExtractJoinedTables();
+            //logger.WriteLine(data);
+
+            // Task 4. Write a method that adds a new product in the products table
+            //sqlConnection.AddnewProduct("Tomatos", false);
+
+            // Task 5. Write a program that retrieves the images for all categories and stores them as JPG files in the file system.
+            sqlConnection.SaveLocalyAllImages();
+            logger.WriteLine("Check saved in bin/Debug folder.");
         }
     }
 }

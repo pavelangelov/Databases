@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Text;
 
 namespace SqlServerConnections.Models
@@ -98,6 +100,46 @@ namespace SqlServerConnections.Models
             }
 
             return result.ToString();
+        }
+
+        public void AddnewProduct(string productName, bool discontinued)
+        {
+            var connection = CreateNewConnection();
+
+            connection.Open();
+            using (connection)
+            {
+                var commandStr = @"INSERT INTO Products (ProductName, Discontinued)
+                                    Values(@productName, @discontinued)";
+                var sqlCommand = new SqlCommand(commandStr, connection);
+                sqlCommand.Parameters.AddWithValue("@productName", productName);
+                sqlCommand.Parameters.AddWithValue("@discontinued", discontinued);
+                sqlCommand.ExecuteScalar();
+            }
+        }
+
+        public void SaveLocalyAllImages()
+        {
+            var connection = CreateNewConnection();
+            connection.Open();
+            using (connection)
+            {
+                var commandStr = @"SELECT CategoryName AS [Name], Picture FROM Categories";
+                var sqlCommand = new SqlCommand(commandStr, connection);
+                var reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    var name = reader["Name"].ToString().Replace('/', '-');
+                    var img = (byte[])reader["Picture"];
+                    var pictureStartPossition = 78;
+
+                    var stream = new MemoryStream(img, pictureStartPossition, img.Length - pictureStartPossition);
+                    using (var image = Image.FromStream(stream))
+                    {
+                        image.Save($"{name}.jpg");
+                    }
+                }
+            }
         }
 
         private SqlConnection CreateNewConnection()
