@@ -31,6 +31,7 @@ namespace SqlServerConnections
             // Task 5. Write a program that retrieves the images for all categories and stores them as JPG files in the file system.
             sqlConnection.SaveLocalyAllImages();
             logger.WriteLine("Check saved in bin/Debug folder.");
+            
         }
     }
 }
