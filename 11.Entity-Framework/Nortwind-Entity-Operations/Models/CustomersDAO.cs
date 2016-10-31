@@ -121,6 +121,20 @@ namespace Nortwind_Entity_Operations.Models
             return result.ToString();
         }
 
+        public static string ListAllSalesByRegionAndPeriod(string region, DateTime startDate, DateTime endDate)
+        {
+            var result = new StringBuilder();
+            var orders = db.Orders.Where(o => o.ShipRegion == region)
+                                    .Where(o => startDate <= o.OrderDate && o.OrderDate <= endDate);
+            result.AppendLine($"Orders in region {region} bewtween {startDate.ToShortDateString()} and {endDate.ToShortDateString()}:");
+            foreach (var order in orders)
+            {
+                result.AppendLine($"Order to: {order.ShipRegion}, Order date: {order.OrderDate}");
+            }
+
+            return result.ToString();
+        }
+
         public static string ListAllCustomers()
         {
             var result = new StringBuilder();
