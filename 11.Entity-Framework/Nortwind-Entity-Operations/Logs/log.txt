@@ -1,0 +1,85 @@
+Opened connection at 10/30/2016 8:55:26 PM +02:00
+
+Started transaction at 10/30/2016 8:55:26 PM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, NULL, NULL, NULL, @2, NULL, NULL, @3, @4, NULL)
+
+-- @0: '12346' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Telerik' (Type = String, Size = 40)
+
+-- @2: 'Sofia' (Type = String, Size = 15)
+
+-- @3: 'Bulgaria' (Type = String, Size = 15)
+
+-- @4: '0888111111' (Type = String, Size = 24)
+
+-- Executing at 10/30/2016 8:55:26 PM +02:00
+
+-- Completed in 7 ms with result: 1
+
+
+
+Committed transaction at 10/30/2016 8:55:26 PM +02:00
+
+Closed connection at 10/30/2016 8:55:26 PM +02:00
+
+Opened connection at 10/30/2016 8:56:42 PM +02:00
+
+Started transaction at 10/30/2016 8:56:43 PM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, NULL, NULL, NULL, @2, NULL, NULL, @3, @4, NULL)
+
+-- @0: '12347' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Telerik' (Type = String, Size = 40)
+
+-- @2: 'Sofia' (Type = String, Size = 15)
+
+-- @3: 'Bulgaria' (Type = String, Size = 15)
+
+-- @4: '0888111111' (Type = String, Size = 24)
+
+-- Executing at 10/30/2016 8:56:43 PM +02:00
+
+-- Completed in 10 ms with result: 1
+
+
+
+Committed transaction at 10/30/2016 8:56:43 PM +02:00
+
+Closed connection at 10/30/2016 8:56:43 PM +02:00
+
+Opened connection at 10/30/2016 9:05:19 PM +02:00
+
+Started transaction at 10/30/2016 9:05:19 PM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, @2, NULL, @3, @4, NULL, NULL, @5, @6, NULL)
+
+-- @0: 'DMTAP' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Progress' (Type = String, Size = 40)
+
+-- @2: 'Doncho Minkov' (Type = String, Size = 30)
+
+-- @3: 'Mladost' (Type = String, Size = 60)
+
+-- @4: 'Sofia' (Type = String, Size = 15)
+
+-- @5: 'Bulgaria' (Type = String, Size = 15)
+
+-- @6: '0888123456' (Type = String, Size = 24)
+
+-- Executing at 10/30/2016 9:05:19 PM +02:00
+
+-- Completed in 9 ms with result: 1
+
+
+
+Committed transaction at 10/30/2016 9:05:19 PM +02:00
+
+Closed connection at 10/30/2016 9:05:19 PM +02:00
+
