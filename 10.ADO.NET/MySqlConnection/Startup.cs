@@ -9,7 +9,7 @@ namespace MySqlServerConnections
     {
         public static void Main()
         {
-            const string connectionString = "Server=localhost;Database=books_store;Uid=root;Pwd=opelvec7ra;";
+            const string connectionString = "Server=localhost;Database=books_store;Uid=root;Pwd=yourPassword;";
 
             var logger = new ConsoleLogger();
             var mySqlConnection = new MySqlServerConnection(connectionString);
