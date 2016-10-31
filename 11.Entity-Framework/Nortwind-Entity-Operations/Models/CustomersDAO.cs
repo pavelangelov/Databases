@@ -103,6 +103,24 @@ namespace Nortwind_Entity_Operations.Models
             return result.ToString();
         }
 
+        public static string ListAllCustomersWithSqlQuery(int year, string country)
+        {
+            var result = new StringBuilder();
+            var query = @" SELECT * FROM Orders o
+                                JOIN Customers c
+                                ON o.CustomerID = c.CustomerID
+                            WHERE o.ShipCountry = '{0}' AND YEAR(o.OrderDate) = {1}";
+            var customers = db.Customers.SqlQuery(string.Format(query, country, year));
+
+            result.AppendLine($"Customers who have orders to {country} in {year}.");
+            foreach (var customer in customers)
+            {
+                result.AppendLine($"Customer: {customer.CompanyName}");
+            }
+
+            return result.ToString();
+        }
+
         public static string ListAllCustomers()
         {
             var result = new StringBuilder();

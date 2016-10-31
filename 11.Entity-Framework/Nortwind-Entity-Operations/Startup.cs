@@ -41,6 +41,9 @@ namespace Nortwind_Entity_Operations
 
             var orders = CustomersDAO.ListAllCustomersByOrdersYearAndShippedCountry(1997, "Canada");
             Console.WriteLine(orders);
+
+            var customers = CustomersDAO.ListAllCustomersWithSqlQuery(1997, "Canada");
+            Console.WriteLine(customers);
         }
     }
 }
