@@ -1,22 +1,50 @@
-﻿using StudentSystem.Models.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
+using StudentSystem.Models.Contracts;
 
 namespace StudentSystem.Models
 {
     public class Student : INameble
     {
+        private ICollection<Course> courses;
+        private ICollection<Homework> homeworks;
+
+        public Student()
+        {
+            this.courses = new HashSet<Course>();
+            this.homeworks = new HashSet<Homework>();
+        }
+
         public int Id { get; set; }
 
         public string Name { get; set; }
 
         public int StudentNumber { get; set; }
 
-        public virtual ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Course> Courses
+        {
+            get
+            {
+                return this.courses;
+            }
 
-        public virtual ICollection<Homework> Homeworks { get; set; }
+            set
+            {
+                this.courses = value;
+            }
+        }
+
+        public virtual ICollection<Homework> Homeworks
+        {
+            get
+            {
+                return this.homeworks;
+            }
+
+            set
+            {
+                this.homeworks = value;
+            }
+        }
     }
 }
