@@ -1,11 +1,12 @@
-﻿using Nortwind_Entity_Operations.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using Nortwind_Entity_Operations.Data;
 
 namespace Nortwind_Entity_Operations.Models
 {
@@ -144,6 +145,13 @@ namespace Nortwind_Entity_Operations.Models
             }
 
             return result.ToString();
+        }
+
+        public static void TwinDatabase()
+        {
+            var twinedDatabaseConnectionString = "NorthwindTwin";
+            var newDbContext = new NorthwindEntities(twinedDatabaseConnectionString);
+            newDbContext.Database.CreateIfNotExists();
         }
         
     }

@@ -21,6 +21,12 @@ namespace Nortwind_Entity_Operations.Data
             : base("name=NorthwindEntities")
         {
         }
+
+        public NorthwindEntities(string connectionString)
+            : base($"name={connectionString}")
+        {
+
+        }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
