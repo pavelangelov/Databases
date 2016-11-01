@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using System.ComponentModel.DataAnnotations;
+
 using StudentSystem.Models.Contracts;
 
 namespace StudentSystem.Models
@@ -17,8 +19,10 @@ namespace StudentSystem.Models
 
         public int Id { get; set; }
 
+        [MaxLength(40)]
         public string Name { get; set; }
 
+        [MaxLength(40)]
         public string Description { get; set; }
 
         public virtual ICollection<Student> Students

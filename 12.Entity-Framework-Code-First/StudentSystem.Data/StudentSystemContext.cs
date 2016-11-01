@@ -1,17 +1,13 @@
-﻿using StudentSystem.Models;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
+
+using StudentSystem.Models;
 
 namespace StudentSystem.Data
 {
     public class StudentSystemContext : DbContext
     {
         public StudentSystemContext()
-            : base("SudentSystem")
+            : base("StudentSystem")
         {
         }
 
@@ -20,5 +16,10 @@ namespace StudentSystem.Data
         public IDbSet<Course> Courses { get; set; }
 
         public IDbSet<Homework> Homeworks { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

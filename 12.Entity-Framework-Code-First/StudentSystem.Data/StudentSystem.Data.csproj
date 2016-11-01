@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201611012001284_Initial.cs" />
+    <Compile Include="Migrations\201611012001284_Initial.Designer.cs">
+      <DependentUpon>201611012001284_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611012120077_Added-Attributes.cs" />
+    <Compile Include="Migrations\201611012120077_Added-Attributes.Designer.cs">
+      <DependentUpon>201611012120077_Added-Attributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="StudentSystemContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,6 +70,14 @@
       <Project>{aa66e8e8-08b8-4a25-9d56-ab1597779a7d}</Project>
       <Name>StudentSystem.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611012001284_Initial.resx">
+      <DependentUpon>201611012001284_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611012120077_Added-Attributes.resx">
+      <DependentUpon>201611012120077_Added-Attributes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
