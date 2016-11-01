@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 
 using StudentSystem.Data;
 using StudentSystem.Models;
@@ -15,7 +16,7 @@ namespace StudentSystem.App
 
             using (dbContext)
             {
-                dbContext.Database.CreateIfNotExists();
+                Database.SetInitializer<StudentSystemContext>(new CreateDatabaseIfNotExists<StudentSystemContext>());
 
                 // Seed some students and homeworks to DB
                 var nextStudentId = dbContext.Students.Count();
@@ -34,6 +35,7 @@ namespace StudentSystem.App
 
                 // Add single course to DB
                 dbContext.Courses.Add(new Course() { Name = "C# Fundamentals", Description = "Learn fundamentals for C#  language." });
+                dbContext.SaveChanges();
 
                 // Add first student to first course
                 var course = dbContext.Courses.FirstOrDefault();
