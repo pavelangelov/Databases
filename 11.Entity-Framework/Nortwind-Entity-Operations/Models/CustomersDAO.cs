@@ -13,7 +13,7 @@ namespace Nortwind_Entity_Operations.Models
     public static class CustomersDAO
     {
         private static NorthwindEntities db = new NorthwindEntities();
-        
+
         public static void AddNewCustomer(string companyName, string customerId, string country, string city, string phone)
         {
             var logFilePath = @"../../Logs/log.txt";
@@ -62,61 +62,92 @@ namespace Nortwind_Entity_Operations.Models
 
         public static string UpdateCustomer(string customerId, string name)
         {
-            var customer = db.Customers.Find(customerId);
+            var result = "";
+            var logFilePath = @"../../Logs/log.txt";
 
-            if (customer != null)
+            using (var writer = new StreamWriter(logFilePath, true))
             {
-                customer.ContactName = name;
-                db.SaveChanges();
-                return $"Customer with CustomerId: {customerId} updated successefully!";
+                db.Database.Log = writer.WriteLine;
+                var customer = db.Customers.Find(customerId);
+
+                if (customer != null)
+                {
+                    customer.ContactName = name;
+                    db.SaveChanges();
+                    result = $"Customer with CustomerId: {customerId} updated successefully!";
+                }
+                else
+                {
+                    result = $"Customer with CustomerId: {customerId} doesn`t exist!";
+                }
             }
-            else
-            {
-                return $"Customer with CustomerId: {customerId} doesn`t exist!";
-            }
+
+            return result;
         }
 
         public static string RemoveCustomer(string customerId)
         {
-            var customer = db.Customers.Find(customerId);
-            if (customer != null)
+            var result = "";
+            var logFilePath = @"../../Logs/log.txt";
+            using (var writer = new StreamWriter(logFilePath, true))
             {
-                db.Customers.Remove(customer);
-                db.SaveChanges();
-                return $"Customer with CustomerId: {customerId} is removed.";
-            }
-            else
-            {
-                return $"Customer with CustomerId: {customerId} doesn`t exist!";
+                db.Database.Log = writer.WriteLine;
+
+                var customer = db.Customers.Find(customerId);
+                if (customer != null)
+                {
+                    db.Customers.Remove(customer);
+                    db.SaveChanges();
+                    result = $"Customer with CustomerId: {customerId} is removed.";
+                }
+                else
+                {
+                    result = $"Customer with CustomerId: {customerId} doesn`t exist!";
+                }
             }
 
+            return result;
         }
 
         public static string ListAllCustomersByOrdersYearAndShippedCountry(int year, string country)
         {
             var result = new StringBuilder();
-            var orders = db.Orders.Where(o => o.OrderDate.Value.Year == year && o.ShipCountry == country);
+            var logFilePath = @"../../Logs/log.txt";
 
-            foreach (var order in orders)
+            using (var writer = new StreamWriter(logFilePath, true))
             {
-                result.AppendLine($"Customer: {order.Customer.CompanyName}, Order date: {order.OrderDate.Value.ToShortDateString()}, Ship country: {order.ShipCountry}");
+                db.Database.Log = writer.WriteLine;
+                var orders = db.Orders.Where(o => o.OrderDate.Value.Year == year && o.ShipCountry == country);
+
+                foreach (var order in orders)
+                {
+                    result.AppendLine($"Customer: {order.Customer.CompanyName}, Order date: {order.OrderDate.Value.ToShortDateString()}, Ship country: {order.ShipCountry}");
+                }
             }
+
             return result.ToString();
         }
 
-        public static string ListAllCustomersWithSqlQuery(int year, string country)
+        public static string ListAllCustomersByOrdersYearAndShippedCountryWithSqlQuery(int year, string country)
         {
             var result = new StringBuilder();
-            var query = @" SELECT * FROM Orders o
+            var logFilePath = @"../../Logs/log.txt";
+
+            using (var writer = new StreamWriter(logFilePath, true))
+            {
+                db.Database.Log = writer.WriteLine;
+
+                var query = @" SELECT * FROM Orders o
                                 JOIN Customers c
                                 ON o.CustomerID = c.CustomerID
                             WHERE o.ShipCountry = '{0}' AND YEAR(o.OrderDate) = {1}";
-            var customers = db.Customers.SqlQuery(string.Format(query, country, year));
+                var customers = db.Customers.SqlQuery(string.Format(query, country, year));
 
-            result.AppendLine($"Customers who have orders to {country} in {year}.");
-            foreach (var customer in customers)
-            {
-                result.AppendLine($"Customer: {customer.CompanyName}");
+                result.AppendLine($"Customers who have orders to {country} in {year}.");
+                foreach (var customer in customers)
+                {
+                    result.AppendLine($"Customer: {customer.CompanyName}");
+                }
             }
 
             return result.ToString();
@@ -125,12 +156,20 @@ namespace Nortwind_Entity_Operations.Models
         public static string ListAllSalesByRegionAndPeriod(string region, DateTime startDate, DateTime endDate)
         {
             var result = new StringBuilder();
-            var orders = db.Orders.Where(o => o.ShipRegion == region)
-                                    .Where(o => startDate <= o.OrderDate && o.OrderDate <= endDate);
-            result.AppendLine($"Orders in region {region} bewtween {startDate.ToShortDateString()} and {endDate.ToShortDateString()}:");
-            foreach (var order in orders)
+            var logFilePath = @"../../Logs/log.txt";
+
+            using (var writer = new StreamWriter(logFilePath, true))
             {
-                result.AppendLine($"Order to: {order.ShipRegion}, Order date: {order.OrderDate}");
+                db.Database.Log = writer.WriteLine;
+
+                var orders = db.Orders.Where(o => o.ShipRegion == region)
+                                    .Where(o => startDate <= o.OrderDate && o.OrderDate <= endDate);
+                result.AppendLine($"Orders in region {region} bewtween {startDate.ToShortDateString()} and {endDate.ToShortDateString()}:");
+
+                foreach (var order in orders)
+                {
+                    result.AppendLine($"Order to: {order.ShipRegion}, Order date: {order.OrderDate}");
+                }
             }
 
             return result.ToString();
@@ -139,9 +178,14 @@ namespace Nortwind_Entity_Operations.Models
         public static string ListAllCustomers()
         {
             var result = new StringBuilder();
-            foreach (var customer in db.Customers)
+            var logFilePath = @"../../Logs/log.txt";
+            using (var writer = new StreamWriter(logFilePath, true))
             {
-                result.AppendLine($"CustomerId: {customer.CustomerID}, Contact name: {customer.ContactName}");
+                db.Database.Log = writer.WriteLine;
+                foreach (var customer in db.Customers)
+                {
+                    result.AppendLine($"CustomerId: {customer.CustomerID}, Contact name: {customer.ContactName}");
+                }
             }
 
             return result.ToString();
@@ -149,10 +193,15 @@ namespace Nortwind_Entity_Operations.Models
 
         public static void TwinDatabase()
         {
-            var twinedDatabaseConnectionString = "NorthwindTwin";
-            var newDbContext = new NorthwindEntities(twinedDatabaseConnectionString);
-            newDbContext.Database.CreateIfNotExists();
+            var logFilePath = @"../../Logs/log.txt";
+            using (var writer = new StreamWriter(logFilePath, true))
+            {
+                db.Database.Log = writer.WriteLine;
+                var twinedDatabaseConnectionString = "NorthwindTwin";
+                var newDbContext = new NorthwindEntities(twinedDatabaseConnectionString);
+                newDbContext.Database.CreateIfNotExists();
+            }
         }
-        
+
     }
 }

@@ -83,3 +83,618 @@ Committed transaction at 10/30/2016 9:05:19 PM +02:00
 
 Closed connection at 10/30/2016 9:05:19 PM +02:00
 
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+Started transaction at 11/1/2016 10:33:55 AM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, NULL, NULL, NULL, @2, NULL, NULL, @3, @4, NULL)
+
+-- @0: '12349' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Telerik' (Type = String, Size = 40)
+
+-- @2: 'Sofia' (Type = String, Size = 15)
+
+-- @3: 'Bulgaria' (Type = String, Size = 15)
+
+-- @4: '0888111111' (Type = String, Size = 24)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 7 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:33:55 AM +02:00
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+Started transaction at 11/1/2016 10:33:55 AM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, @2, NULL, @3, @4, NULL, NULL, @5, @6, NULL)
+
+-- @0: 'EVHRI' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Progress' (Type = String, Size = 40)
+
+-- @2: 'Evlogi Hristov' (Type = String, Size = 30)
+
+-- @3: 'Mladost' (Type = String, Size = 60)
+
+-- @4: 'Sofia' (Type = String, Size = 15)
+
+-- @5: 'Bulgaria' (Type = String, Size = 15)
+
+-- @6: '0888123456' (Type = String, Size = 24)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 4 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:33:55 AM +02:00
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 3 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT TOP (2) 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+    WHERE [Extent1].[CustomerID] = @p0
+
+
+-- p0: '12345' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 10 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT TOP (2) 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+    WHERE [Extent1].[CustomerID] = @p0
+
+
+-- p0: '12346' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 0 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT TOP (2) 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+    WHERE [Extent1].[CustomerID] = @p0
+
+
+-- p0: '12347' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 3 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 0 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT TOP (2) 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+    WHERE [Extent1].[CustomerID] = @p0
+
+
+-- p0: '12347' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 0 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT 
+    [Extent1].[OrderID] AS [OrderID], 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[EmployeeID] AS [EmployeeID], 
+    [Extent1].[OrderDate] AS [OrderDate], 
+    [Extent1].[RequiredDate] AS [RequiredDate], 
+    [Extent1].[ShippedDate] AS [ShippedDate], 
+    [Extent1].[ShipVia] AS [ShipVia], 
+    [Extent1].[Freight] AS [Freight], 
+    [Extent1].[ShipName] AS [ShipName], 
+    [Extent1].[ShipAddress] AS [ShipAddress], 
+    [Extent1].[ShipCity] AS [ShipCity], 
+    [Extent1].[ShipRegion] AS [ShipRegion], 
+    [Extent1].[ShipPostalCode] AS [ShipPostalCode], 
+    [Extent1].[ShipCountry] AS [ShipCountry]
+    FROM [dbo].[Orders] AS [Extent1]
+    WHERE ((DATEPART (year, [Extent1].[OrderDate])) = @p__linq__0) AND (([Extent1].[ShipCountry] = @p__linq__1) OR (([Extent1].[ShipCountry] IS NULL) AND (@p__linq__1 IS NULL)))
+
+
+-- p__linq__0: '1997' (Type = Int32, IsNullable = false)
+
+-- p__linq__1: 'Canada' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 27 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+ SELECT * FROM Orders o
+                                JOIN Customers c
+                                ON o.CustomerID = c.CustomerID
+                            WHERE o.ShipCountry = 'Canada' AND YEAR(o.OrderDate) = 1997
+
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 14 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:33:55 AM +02:00
+
+SELECT 
+    [Extent1].[OrderID] AS [OrderID], 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[EmployeeID] AS [EmployeeID], 
+    [Extent1].[OrderDate] AS [OrderDate], 
+    [Extent1].[RequiredDate] AS [RequiredDate], 
+    [Extent1].[ShippedDate] AS [ShippedDate], 
+    [Extent1].[ShipVia] AS [ShipVia], 
+    [Extent1].[Freight] AS [Freight], 
+    [Extent1].[ShipName] AS [ShipName], 
+    [Extent1].[ShipAddress] AS [ShipAddress], 
+    [Extent1].[ShipCity] AS [ShipCity], 
+    [Extent1].[ShipRegion] AS [ShipRegion], 
+    [Extent1].[ShipPostalCode] AS [ShipPostalCode], 
+    [Extent1].[ShipCountry] AS [ShipCountry]
+    FROM [dbo].[Orders] AS [Extent1]
+    WHERE (([Extent1].[ShipRegion] = @p__linq__0) OR (([Extent1].[ShipRegion] IS NULL) AND (@p__linq__0 IS NULL))) AND (@p__linq__1 <= [Extent1].[OrderDate]) AND ([Extent1].[OrderDate] <= @p__linq__2)
+
+
+-- p__linq__0: 'Lara' (Type = String, Size = 4000)
+
+-- p__linq__1: '1/1/1997 12:00:00 AM' (Type = DateTime2, IsNullable = false)
+
+-- p__linq__2: '1/1/1998 12:00:00 AM' (Type = DateTime2, IsNullable = false)
+
+-- Executing at 11/1/2016 10:33:55 AM +02:00
+
+-- Completed in 4 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:33:55 AM +02:00
+
+Opened connection at 11/1/2016 10:34:47 AM +02:00
+
+Started transaction at 11/1/2016 10:34:47 AM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, NULL, NULL, NULL, @2, NULL, NULL, @3, @4, NULL)
+
+-- @0: '12345' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Telerik' (Type = String, Size = 40)
+
+-- @2: 'Sofia' (Type = String, Size = 15)
+
+-- @3: 'Bulgaria' (Type = String, Size = 15)
+
+-- @4: '0888111111' (Type = String, Size = 24)
+
+-- Executing at 11/1/2016 10:34:47 AM +02:00
+
+-- Completed in 10 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:47 AM +02:00
+
+Closed connection at 11/1/2016 10:34:47 AM +02:00
+
+Opened connection at 11/1/2016 10:34:47 AM +02:00
+
+Started transaction at 11/1/2016 10:34:47 AM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, NULL, NULL, NULL, @2, NULL, NULL, @3, @4, NULL)
+
+-- @0: '12347' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Telerik' (Type = String, Size = 40)
+
+-- @2: 'Sofia' (Type = String, Size = 15)
+
+-- @3: 'Bulgaria' (Type = String, Size = 15)
+
+-- @4: '0888111111' (Type = String, Size = 24)
+
+-- Executing at 11/1/2016 10:34:47 AM +02:00
+
+-- Completed in 0 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:47 AM +02:00
+
+Closed connection at 11/1/2016 10:34:47 AM +02:00
+
+Opened connection at 11/1/2016 10:34:47 AM +02:00
+
+Started transaction at 11/1/2016 10:34:47 AM +02:00
+
+INSERT [dbo].[Customers]([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax])
+VALUES (@0, @1, @2, NULL, @3, @4, NULL, NULL, @5, @6, NULL)
+
+-- @0: 'EHTAP' (Type = StringFixedLength, Size = 5)
+
+-- @1: 'Progress' (Type = String, Size = 40)
+
+-- @2: 'Evlogi Hristov' (Type = String, Size = 30)
+
+-- @3: 'Mladost' (Type = String, Size = 60)
+
+-- @4: 'Sofia' (Type = String, Size = 15)
+
+-- @5: 'Bulgaria' (Type = String, Size = 15)
+
+-- @6: '0888123456' (Type = String, Size = 24)
+
+-- Executing at 11/1/2016 10:34:47 AM +02:00
+
+-- Completed in 2 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:47 AM +02:00
+
+Closed connection at 11/1/2016 10:34:47 AM +02:00
+
+Opened connection at 11/1/2016 10:34:47 AM +02:00
+
+SELECT 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 1 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+Started transaction at 11/1/2016 10:34:48 AM +02:00
+
+UPDATE [dbo].[Customers]
+SET [ContactName] = @0
+WHERE ([CustomerID] = @1)
+
+-- @0: 'Pavel Angelov' (Type = String, Size = 30)
+
+-- @1: '12345' (Type = StringFixedLength, Size = 5)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 4 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:48 AM +02:00
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+SELECT TOP (2) 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+    WHERE [Extent1].[CustomerID] = @p0
+
+
+-- p0: '12346' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 2 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+Started transaction at 11/1/2016 10:34:48 AM +02:00
+
+UPDATE [dbo].[Customers]
+SET [ContactName] = @0
+WHERE ([CustomerID] = @1)
+
+-- @0: 'Pesho Peshev' (Type = String, Size = 30)
+
+-- @1: '12347' (Type = StringFixedLength, Size = 5)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 0 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:48 AM +02:00
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+SELECT 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[CompanyName] AS [CompanyName], 
+    [Extent1].[ContactName] AS [ContactName], 
+    [Extent1].[ContactTitle] AS [ContactTitle], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[City] AS [City], 
+    [Extent1].[Region] AS [Region], 
+    [Extent1].[PostalCode] AS [PostalCode], 
+    [Extent1].[Country] AS [Country], 
+    [Extent1].[Phone] AS [Phone], 
+    [Extent1].[Fax] AS [Fax]
+    FROM [dbo].[Customers] AS [Extent1]
+
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 1 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+Started transaction at 11/1/2016 10:34:48 AM +02:00
+
+DELETE [dbo].[Customers]
+WHERE ([CustomerID] = @0)
+
+
+-- @0: '12347' (Type = StringFixedLength, Size = 5)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 5 ms with result: 1
+
+
+
+Committed transaction at 11/1/2016 10:34:48 AM +02:00
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+SELECT 
+    [Extent1].[OrderID] AS [OrderID], 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[EmployeeID] AS [EmployeeID], 
+    [Extent1].[OrderDate] AS [OrderDate], 
+    [Extent1].[RequiredDate] AS [RequiredDate], 
+    [Extent1].[ShippedDate] AS [ShippedDate], 
+    [Extent1].[ShipVia] AS [ShipVia], 
+    [Extent1].[Freight] AS [Freight], 
+    [Extent1].[ShipName] AS [ShipName], 
+    [Extent1].[ShipAddress] AS [ShipAddress], 
+    [Extent1].[ShipCity] AS [ShipCity], 
+    [Extent1].[ShipRegion] AS [ShipRegion], 
+    [Extent1].[ShipPostalCode] AS [ShipPostalCode], 
+    [Extent1].[ShipCountry] AS [ShipCountry]
+    FROM [dbo].[Orders] AS [Extent1]
+    WHERE ((DATEPART (year, [Extent1].[OrderDate])) = @p__linq__0) AND (([Extent1].[ShipCountry] = @p__linq__1) OR (([Extent1].[ShipCountry] IS NULL) AND (@p__linq__1 IS NULL)))
+
+
+-- p__linq__0: '1997' (Type = Int32, IsNullable = false)
+
+-- p__linq__1: 'Canada' (Type = String, Size = 4000)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 5 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+ SELECT * FROM Orders o
+                                JOIN Customers c
+                                ON o.CustomerID = c.CustomerID
+                            WHERE o.ShipCountry = 'Canada' AND YEAR(o.OrderDate) = 1997
+
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 14 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
+Opened connection at 11/1/2016 10:34:48 AM +02:00
+
+SELECT 
+    [Extent1].[OrderID] AS [OrderID], 
+    [Extent1].[CustomerID] AS [CustomerID], 
+    [Extent1].[EmployeeID] AS [EmployeeID], 
+    [Extent1].[OrderDate] AS [OrderDate], 
+    [Extent1].[RequiredDate] AS [RequiredDate], 
+    [Extent1].[ShippedDate] AS [ShippedDate], 
+    [Extent1].[ShipVia] AS [ShipVia], 
+    [Extent1].[Freight] AS [Freight], 
+    [Extent1].[ShipName] AS [ShipName], 
+    [Extent1].[ShipAddress] AS [ShipAddress], 
+    [Extent1].[ShipCity] AS [ShipCity], 
+    [Extent1].[ShipRegion] AS [ShipRegion], 
+    [Extent1].[ShipPostalCode] AS [ShipPostalCode], 
+    [Extent1].[ShipCountry] AS [ShipCountry]
+    FROM [dbo].[Orders] AS [Extent1]
+    WHERE (([Extent1].[ShipRegion] = @p__linq__0) OR (([Extent1].[ShipRegion] IS NULL) AND (@p__linq__0 IS NULL))) AND (@p__linq__1 <= [Extent1].[OrderDate]) AND ([Extent1].[OrderDate] <= @p__linq__2)
+
+
+-- p__linq__0: 'Lara' (Type = String, Size = 4000)
+
+-- p__linq__1: '1/1/1997 12:00:00 AM' (Type = DateTime2, IsNullable = false)
+
+-- p__linq__2: '1/1/1998 12:00:00 AM' (Type = DateTime2, IsNullable = false)
+
+-- Executing at 11/1/2016 10:34:48 AM +02:00
+
+-- Completed in 7 ms with result: SqlDataReader
+
+
+
+Closed connection at 11/1/2016 10:34:48 AM +02:00
+
