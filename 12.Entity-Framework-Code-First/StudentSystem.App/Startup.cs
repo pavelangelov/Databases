@@ -51,11 +51,18 @@ namespace StudentSystem.App
                 Console.WriteLine($"Students int this course: \r\n{studentsStr}");
             }
 
-            var homeworksFromDb = dbContext.Homeworks;
+            var homeworksFromDb = dbContext.Homeworks.Select(h => new
+            {
+                CourseName = h.Course.Name,
+                Content = h.Content,
+                TimeSent = h.TimeSent,
+                StudentName = h.Student.Name
+            });
+
             foreach (var homework in homeworksFromDb)
             {
-                Console.WriteLine($"Homework from Student: {homework.Student.Name}");
-                Console.WriteLine($"For course: {homework.Course.Name}");
+                Console.WriteLine($"Homework from Student: {homework.StudentName}");
+                Console.WriteLine($"For course: {homework.CourseName}");
                 Console.WriteLine($"Sent on: {homework.TimeSent}");
                 Console.WriteLine($"Content: {homework.Content}");
                 Console.WriteLine("----------------------------------");
@@ -63,27 +70,26 @@ namespace StudentSystem.App
 
         }
 
-        public static IEnumerable<Student> GenerateStudents(int numberOfStudents, int nextId)
+        public static ICollection<Student> GenerateStudents(int numberOfStudents, int nextId)
         {
-
             var result = new List<Student>();
-            for (int i = 1; i <= numberOfStudents; i++)
+            for (int i = 0; i < numberOfStudents; i++)
             {
-                var name = $"Student {i}";
-                var studentNumber = 120 + i;
+                var name = $"Student {nextId}";
+                var studentNumber = 120 + nextId;
                 result.Add(new Student() { Id = ++nextId,  Name = name, StudentNumber = studentNumber });
             }
 
             return result;
         }
 
-        public static IEnumerable<Homework> GenerateHomeworks(int numberOfHomeworks, int nextId)
+        public static ICollection<Homework> GenerateHomeworks(int numberOfHomeworks, int nextId)
         {
             var result = new List<Homework>();
-            for (int i = 1; i <= numberOfHomeworks; i++)
+            for (int i = 0; i < numberOfHomeworks; i++)
             {
-                var content = $"Homework #{i}";
-                result.Add(new Homework() {Id = ++nextId, Content = content, StudentId = i, CourseId = 1, TimeSent = DateTime.Now.AddDays(i) });
+                var content = $"Homework #{nextId}";
+                result.Add(new Homework() {Id = ++nextId, Content = content, StudentId = i + 1, CourseId = 1, TimeSent = DateTime.Now.AddDays(i) });
             }
 
             return result;
